@@ -6,13 +6,15 @@ The STraTS model is used as an encoder that outputs a fixed-length vector so tha
 The code is written for the data of 16 months of vital sign recordings obtained from the Nordland Hospital Trust (NHT). This data is not openly available, physionet2012 (open access) can be used with some modifications.
 
 How to use:
-Run the scripts in the following order from the STraTS folder.
+Run the scripts in the following order from the <STraTS SPKI GIT> folder.
 * dataset_scrubb_analysis.ipynb
     * Scrubbing the data, removing patients with short/long stays, duplicates, etc.
 * preprocess_bodo.ipynb (preprocess_physionet2012.py)
     * Rewrite the data to triplet form
 * STraTS_encoder.ipynb
     * Train the STraTS encoder
+* Manually move the weights from the <STraTS SPKI GIT> to the <weights> folder
+    * This is to avoide to overwright previously saved weights.
 * clustering_STraTS_encoder.ipynb
     * Cluster the output from the STraTS encoder
 
