@@ -1,4 +1,4 @@
-# Approaching adverse event detection utilizing transformers on clinical time-series
+# Categorization of phenotype trajectories utilizing transformers on clinical time-series
 
 This implementation is based on the STraTS(see below) code with some modifications to the architecture to fit vital data with an uneven sampling rate.
 The STraTS model is used as an encoder that outputs a fixed-length vector so that each time series input can be represented with a single point and clustered to find structures in the data.
